@@ -21,7 +21,7 @@
         <a href="signs.html">Metal Signs</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <a class="btn btn-primary btn-header" href="mailto:sales@steidlefab.com?subject=Request%20a%20quote">Request a quote</a>
+      <a class="btn btn-primary btn-header" href="mailto:sales@steidlefab.com?subject=Drawing%20for%20quote">Send a drawing</a>
       <button class="menu-toggle" type="button" data-menu-open aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">☰</button>
     </div>
   </header>
@@ -40,18 +40,18 @@
       <a href="signs.html">Metal Signs</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <a class="btn btn-primary" href="mailto:sales@steidlefab.com?subject=Request%20a%20quote">Request a quote</a>
+    <a class="btn btn-primary" href="mailto:sales@steidlefab.com?subject=Drawing%20for%20quote">Send a drawing</a>
   </div>
 
   <main id="content">
     <section class="hero hero-fixed" aria-labelledby="hero-title">
       <picture class="hf-pic">
-        <source media="(max-width: 500px)" srcset="assets/hero-r3-390.webp" type="image/webp">
-        <source media="(max-width: 500px)" srcset="assets/hero-r3-390.jpg" type="image/jpeg">
-        <source media="(max-width: 1000px)" srcset="assets/hero-r3-768.webp" type="image/webp">
-        <source media="(max-width: 1000px)" srcset="assets/hero-r3-768.jpg" type="image/jpeg">
-        <source srcset="assets/hero-r3-1440.webp" type="image/webp">
-        <img src="assets/hero-r3-1440.jpg" alt="Steidle Fabricating" width="2880" height="1200" fetchpriority="high" decoding="sync">
+        <source media="(max-width: 500px)" srcset="assets/hero-r3-390-nameclear.webp" type="image/webp">
+        <source media="(max-width: 500px)" srcset="assets/hero-r3-390-nameclear.jpg" type="image/jpeg">
+        <source media="(max-width: 1000px)" srcset="assets/hero-r3-768-nameclear.webp" type="image/webp">
+        <source media="(max-width: 1000px)" srcset="assets/hero-r3-768-nameclear.jpg" type="image/jpeg">
+        <source srcset="assets/hero-r3-1440-nameclear.webp" type="image/webp">
+        <img src="assets/hero-r3-1440-nameclear.jpg" alt="Steidle Fabricating" width="2880" height="1200" fetchpriority="high" decoding="sync">
       </picture>
       <div class="hf-copy">
         <h1 id="hero-title">Waterjet, welding and machining in Bromley, KY since 1955.</h1>
@@ -59,26 +59,66 @@
       </div>
     </section>
 
-    <section class="section" aria-label="Services">
+    <section class="section section-services" aria-labelledby="services-title">
       <div class="wrap">
+        <h2 id="services-title">Services</h2>
         <div class="offer-grid">
-          <article class="offer-card accent">
-            <h2>Waterjet cutting</h2>
-            <p>Waterjet cutting for custom parts and shapes.</p>
+          <article class="offer-card">
+            <h3>Waterjet cutting</h3>
+            <p>Custom parts and shapes cut from your drawing or sketch.</p>
+            <p>We cut with a high-pressure stream of water, not heat, so the cut edge has no heat-affected zone.</p>
+            <!-- Materials bullets: hidden until Ken confirms (SITE-CHANGES item 6). -->
+            <p class="tile-send"><span class="tile-send-label">What to send:</span> Drawing or sketch · Material · Thickness</p>
+            <a class="tile-link" href="capabilities.html#waterjet">Waterjet details</a>
           </article>
           <article class="offer-card">
-            <h2>Welding</h2>
-            <p>Welding for custom parts and assemblies.</p>
+            <h3>Welding</h3>
+            <p>Custom parts and assemblies welded to your drawing or description.</p>
+            <!-- Materials bullets: hidden until Ken confirms (SITE-CHANGES item 6). -->
+            <p class="tile-send"><span class="tile-send-label">What to send:</span> Drawing or description · How the pieces fit together · Quantity</p>
+            <a class="tile-link" href="capabilities.html#welding">Welding details</a>
           </article>
           <article class="offer-card">
-            <h2>Machining</h2>
-            <p>Machining to your drawing or project requirements.</p>
+            <h3>Machining</h3>
+            <p>Parts machined to your drawing or project needs.</p>
+            <!-- Materials bullets: hidden until Ken confirms (SITE-CHANGES item 6). -->
+            <p class="tile-send"><span class="tile-send-label">What to send:</span> Drawing or part description · Key dimensions · Quantity</p>
+            <a class="tile-link" href="capabilities.html#machining">Machining details</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt">
+    <section class="section section-alt section-how" aria-labelledby="how-title">
+      <div class="wrap">
+        <h2 id="how-title">How it works</h2>
+        <ol class="how-grid">
+          <li class="how-step">
+            <span class="how-num" aria-hidden="true">1</span>
+            <div>
+              <h3>Send a drawing</h3>
+              <p>Email your drawing or sketch to <a href="mailto:sales@steidlefab.com?subject=Drawing%20for%20quote">sales@steidlefab.com</a>, or call <a href="tel:8595810122">859-581-0122</a>.</p>
+            </div>
+          </li>
+          <li class="how-step">
+            <span class="how-num" aria-hidden="true">2</span>
+            <div>
+              <h3>We reply</h3>
+              <p>We get back to you to talk through material, quantity and details.</p>
+            </div>
+          </li>
+          <li class="how-step">
+            <span class="how-num" aria-hidden="true">3</span>
+            <div>
+              <h3>We make it</h3>
+              <p>We cut, weld or machine your part to your drawing in Bromley.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="wrap">
         <div class="mid-cta">
           <div>
@@ -130,7 +170,7 @@
         <a href="mailto:sales@steidlefab.com">sales@steidlefab.com</a>
         <span>113 Pike St, Bromley KY 41016</span>
       </p>
-      <a class="btn btn-primary" href="mailto:sales@steidlefab.com?subject=Request%20a%20quote">Request a quote</a>
+      <a class="btn btn-primary" href="mailto:sales@steidlefab.com?subject=Drawing%20for%20quote">Send a drawing</a>
     </div>
   </footer>
   <script src="site.js"></script>
