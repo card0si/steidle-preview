@@ -183,7 +183,7 @@ body.menu-lock { overflow: hidden; }
 }
 .hero-pic img {
   object-fit: cover;
-  object-position: 56% center; /* ~6% further right; cut stays right */
+  object-position: right center; /* rev3: cut + nozzle in right 55% */
 }
 .hero-scrim {
   position: absolute;
@@ -191,7 +191,7 @@ body.menu-lock { overflow: hidden; }
   z-index: 1;
   pointer-events: none;
   /* stronger left fade: 85% through first 40% */
-  background: linear-gradient(90deg, rgba(10,11,13,.85) 0%, rgba(10,11,13,.85) 40%, rgba(10,11,13,.35) 52%, rgba(10,11,13,0) 62%);
+  background: linear-gradient(90deg, rgba(10,11,13,.85) 0%, rgba(10,11,13,.85) 40%, rgba(10,11,13,0) 60%);
 }
 .hero .wrap.hero-copy {
   position: relative;
@@ -499,7 +499,7 @@ body.menu-lock { overflow: hidden; }
     inset: 0;
   }
   .hero-pic img {
-    object-position: 62% 40%; /* nozzle tip + partial logo cut */
+    object-position: center center; /* rev3 4:3: nozzle on material + part of mark */
   }
   .hero-scrim { display: none; }
   .hero .wrap.hero-copy {
@@ -529,7 +529,7 @@ body.menu-lock { overflow: hidden; }
   .hero .lead { font-size: 16px; margin-bottom: 16px; }
   .hero .eyebrow { margin-bottom: 10px; font-size: 12px; }
   .hero .cta-row { flex-direction: column; gap: 12px; }
-  .hero .cta-row .btn { width: 100%; min-height: 48px; }
+  .hero .cta-row .btn { width: 100%; min-height: 44px; }
   .hero-caption {
     position: absolute;
     left: 12px;
@@ -620,3 +620,14 @@ body.menu-lock { overflow: hidden; }
 }
 .sign-card.crop-a img { object-position: 30% 40%; }
 .sign-card.crop-b img { object-position: 70% 55%; }
+
+/* rev3 tablet (720-1023): spec scrim .88 to 50%, 0 by 62%; text in left 45% */
+@media (min-width: 720px) and (max-width: 1023px) {
+  .hero-scrim { background: linear-gradient(90deg, rgba(10,11,13,.88) 0%, rgba(10,11,13,.88) 50%, rgba(10,11,13,0) 62%); }
+  .hero-inner { width: min(45%, 520px); margin-left: 0; }
+  .hero .wrap.hero-copy { width: calc(100% - 64px); padding-left: 0; }
+}
+/* rev3 desktop: keep text column inside left 45% */
+@media (min-width: 1024px) {
+  .hero-inner { width: min(calc(45vw - (100vw - min(var(--max), calc(100vw - 48px))) / 2 - 32px), 520px); }
+}
