@@ -651,3 +651,8 @@ body.menu-lock { overflow: hidden; }
   .trust-bar { font-size: 12px; margin-bottom: 24px; }
   .trust-bar li + li::before { margin: 0 8px; }
 }
+@media (max-width: 719px) {
+  .trust-bar { gap: 6px 8px; }
+  .trust-bar li + li::before { content: none; }
+  .trust-bar li { border: 1px solid rgba(230,232,235,.18); border-radius: 999px; padding: 4px 10px; }
+}
