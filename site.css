@@ -8,3 +8,6 @@
 @media(max-width:719px){.hero{display:block}.hero-photo{position:absolute;inset:0 0 auto;height:410px}.hero-photo img{object-position:center 35%}.hero-scrim{height:411px;background:linear-gradient(0deg,#0b0c0e 0%,rgba(11,12,14,.96) 18%,transparent 48%),linear-gradient(90deg,rgba(11,12,14,.92),transparent 60%)}.hero-inner{padding-top:310px}}
 .footer-contact>a:not(.button),.contact-details a{min-height:44px}
 .steps a[href^="tel:"]{white-space:nowrap}
+/* Andrew 6 Nov 2:27 PM: show his hero image whole and uncovered so the name reads; text sits below it. */
+.hero{display:block}.hero-photo{position:static;display:block}.hero-photo img{width:100%;height:auto;object-fit:contain}.hero-scrim{display:none}.hero-inner{min-height:0;display:block;padding-block:48px 64px}.hero-caption{display:none}
+@media(max-width:719px){.hero-photo{height:auto}.hero-inner{padding-top:28px}}
