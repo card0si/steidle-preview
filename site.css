@@ -529,7 +529,7 @@ body.menu-lock { overflow: hidden; }
   .hero .lead { font-size: 16px; margin-bottom: 16px; }
   .hero .eyebrow { margin-bottom: 10px; font-size: 12px; }
   .hero .cta-row { flex-direction: column; gap: 12px; }
-  .hero .cta-row .btn { width: 100%; min-height: 48px; }
+  .hero .cta-row .btn { width: 100%; min-height: 44px; }
   .hero-caption {
     position: absolute;
     left: 12px;
