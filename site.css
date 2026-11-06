@@ -660,3 +660,7 @@ body.menu-lock { overflow: hidden; }
 .hero-call { color: #E6E8EB; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; min-height: 44px; display: inline-flex; align-items: center; }
 .hero-call:hover { color: #fff; }
 @media (max-width: 719px) { .hero-plain .cta-row { align-items: stretch; } .hero-call { justify-content: center; } }
+/* Hero image restored (6 Nov, Andrew): image hero with stopgap copy */
+.hero:not(.hero-plain) .hero-sub { font-size: 20px; line-height: 1.4; color: #E6E8EB; margin: 0 0 10px; max-width: 34ch; text-shadow: 0 1px 12px rgba(0,0,0,.6); }
+.hero:not(.hero-plain) .trust-bar { color: #E6E8EB; }
+@media (max-width: 719px) { .hero:not(.hero-plain) .hero-sub { font-size: 17px; } }
