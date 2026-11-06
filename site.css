@@ -656,3 +656,7 @@ body.menu-lock { overflow: hidden; }
   .trust-bar li + li::before { content: none; }
   .trust-bar li { border: 1px solid rgba(230,232,235,.18); border-radius: 999px; padding: 4px 10px; }
 }
+.hero-plain .cta-row { align-items: center; gap: 12px 24px; }
+.hero-call { color: #E6E8EB; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; min-height: 44px; display: inline-flex; align-items: center; }
+.hero-call:hover { color: #fff; }
+@media (max-width: 719px) { .hero-plain .cta-row { align-items: stretch; } .hero-call { justify-content: center; } }
